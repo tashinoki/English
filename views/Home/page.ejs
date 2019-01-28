@@ -1,0 +1,18 @@
+
+
+<!--次の問題と前の問題に移動するためのボタン-->
+<nav aria-label="...">
+
+    <ul class="pagination">
+
+        <!--前の問題-->
+        <li id="prev" class="page-item">
+            <a class="page-link" href="/home/lesson/<%- kind %>?field=<%- field %>&id=<%- Number(id) - 1 %>">前へ</a>
+        </li>
+
+        <!--次の問題-->
+        <li id="next" class="page-item">
+            <a class="page-link" href="/home/lesson/<%- kind %>?field=<%- field %>&id=<%- Number(id) + 1 %>">次へ</a>
+        </li>
+    </ul>
+</nav>

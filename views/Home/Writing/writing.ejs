@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%- title %></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../stylesheets/style.css">
+    <link rel="stylesheet" href="../../stylesheets/question.css">
+    <link rel="stylesheet" href="../../stylesheets/writing.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+<!--pass the variable to js from ejs-->
+<script>
+
+    // this is question date
+    let data = {
+
+        question: '<%= question[0]['question'] %>',
+        disc: '<%= question[0]['disc'] %>',
+        ja: '<%= question[0]['ja'] %>',
+        id: '<%= id %>',
+        table: '<%= table %>',
+        max: '<%= max %>'
+    };
+</script>
+
+
+<!--ヘッダーの読み込み-->
+<%- include('../header') %>
+<br>
+
+<!--タイトルの読み込み-->
+<%- include('../title', {title: title}) %>
+<br>
+
+
+<p>日本語に合う英文を記入してください。</p>
+<hr>
+
+
+<!--問題文を挿入する箇所-->
+<%- include('questionBox') %>
+<br>
+
+<!--pagination-->
+<%- include('../page', {id: id, field: field, kind: kind}) %>
+<br>
+
+
+<%- include('../back') %>
+
+
+
+<script src="../../javascripts/writing.js"></script>
+<script src="../../javascripts/question.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%- title %></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="./stylesheets/profile.css">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!--グラフを表示させるためのデータをJavaScriptに渡す-->
+<script>
+    let index = Number("<%= index %>");
+    let type = "week";
+    let max = Number('<%= max %>');
+    let graph_data = [];
+    let buf = {};
+
+    <% for(var i = 0; i < graph.length; i ++){ %>
+
+    <% var date = graph[i]["date"]; %>
+    buf.date = "<%= date %>";
+
+    <% var time = graph[i]["time"]; %>
+    buf.time = "<%= time %>";
+
+    graph_data.push(buf);
+    buf = {};
+    <% } %>
+</script>
+
+
+<%- include('../Home/header') %>
+<div id="container">
+    <%- include('bgImg')%>
+</div>
+<br>
+<br>
+
+<div id="graph">
+    <%- include('graph') %>
+</div>
+<br>
+
+<div id="page">
+    <%- include('page') %>
+</div>
+
+
+<script type="text/javascript" src="./javascripts/graph.js"></script>
+<script type="text/javascript" src="./javascripts/profile.js"></script>
+</body>
+</html>

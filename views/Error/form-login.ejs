@@ -1,0 +1,31 @@
+
+<div id="form">
+
+    <!--login form-->
+    <form class="" action="" method="post">
+
+        <!--title-->
+        <h1 id="title">ログイン</h1>
+        <br>
+        <h2 id="err-msg"><%- msg %></h2>
+
+        <!--user name-->
+        <label>ユーザー名</label>
+        <input type="text" class="form-control" placeholder="User Name" name="user_name">
+        <p></p>
+
+        <!--password-->
+        <label>パスワード</label>
+        <input type="password" class="form-control" placeholder="Password" name="password">
+        <br>
+
+        <!--submit button-->
+        <button class="btn btn-lg btn-primary" id="login-btn">ログイン</button>
+    </form>
+    <br>
+
+    <!--sign up form-->
+    <form action="/signup" method="get">
+        <button class="btn btn-lg btn-primary">登録</button>
+    </form>
+</div>

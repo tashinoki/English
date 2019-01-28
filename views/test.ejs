@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<input type="button" id="button">
+
+<script>
+    const syn = window.speechSynthesis;
+    const utterThis = new SpeechSynthesisUtterance("hello everyone. My mother eat break fast Everyday.");
+    utterThis.voice = syn.getVoices()[0];
+    utterThis.pitch = 1;
+    utterThis.rate = 1;
+
+    document.getElementById("button").addEventListener('click', () => {
+        syn.speak(utterThis);
+    });
+</script>
+</body>
+</html>

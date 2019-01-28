@@ -1,0 +1,17 @@
+
+<!--問題の説明-->
+<% for(var i = 0; i < lesson.length; i++){ %>
+
+    <!--anchor tag-->
+    <a id="<%- lesson[i]['id'] %>" href="/home/lesson/<%- kind %>?field=<%- field %>&id=<%- lesson[i]['id'] %>">
+
+        <!--lesson containar-->
+        <div class="lesson_container">
+
+            <!--question number and explain-->
+            <div><%- lesson[i]['id'] %></div>
+            <div><%- lesson[i]['exp'] %></div>
+        </div>
+    </a>
+    <br>
+<% } %>

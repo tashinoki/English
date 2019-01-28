@@ -1,0 +1,29 @@
+.lesson{
+    float: left;
+    width: 25%;
+}
+
+.title{
+    text-align: center;
+}
+
+.body{
+    font-size: 20px;
+    text-align: center;
+}
+
+#grammar{
+    color: #ff1131;
+}
+
+#writing{
+    color: #110aff;
+}
+
+#listening{
+    color: #ffc30e;
+}
+
+#dictaiting{
+    color: #167a23;
+}

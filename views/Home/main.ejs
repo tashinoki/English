@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%- title %></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="./stylesheets/main.css">
+
+    <script type="text/javascript" src="/javascripts/main.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        let sum_time = '<%- sum_time %>';
+        sum_time = sum_time.split(',');
+        const hour = sum_time[0];
+        const min = sum_time[1];
+    </script>
+</head>
+<body>
+<%- include('header') %>
+<br>
+
+<!--ユーザーネームや過去の勉強時間-->
+<div id="message">
+    <%- include('message', {user_name: user_name, sum_time: sum_time}) %>
+</div>
+<br>
+
+<%- include('component', {title: '英文法', kind: "grammar"}) %>
+<%- include('component', {title: 'ライティング', kind: "writing"}) %>
+<%- include('listen', {title: 'リスニング', kind: "listening"}) %>
+<%- include('component', {title: 'ディクテイティング', kind: "dictaiting"}) %>
+<p style="float: none;"></p>
+
+</body>
+</html>

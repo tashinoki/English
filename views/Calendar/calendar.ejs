@@ -1,0 +1,106 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%- title %></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <script rel="javascript" type="text/javascript" src="/javascripts/calendar.js"></script>
+    <style>
+        td,th{
+            text-align: center;
+        }
+        .day{
+            width: 14%;
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+<%- include('../Home/header') %>
+<table border="1" style="width: 100%">
+
+    <thead>
+        <tr>
+            <th colspan="1"><button id="prev">前月</button></th>
+            <th colspan="5"><span id="year"></span>年<span id="month"></span>月</th>
+            <th colspan="1"><button id="next">翌月</button></th>
+        </tr>
+        <tr>
+            <td>日</td>
+            <td>月</td>
+            <td>火</td>
+            <td>水</td>
+            <td>木</td>
+            <td>金</td>
+            <td>土</td>
+        </tr>
+    </thead>
+
+    <tbody id="body">
+        <tr>
+            <td class="day"></td>
+            <td class="day"></td>
+            <td class="day"></td>
+            <td class="day"></td>
+            <td class="day"></td>
+            <td class="day"></td>
+            <td class="day"></td>
+        </tr>
+
+        <tr>
+            <td class="day"></td>
+            <td class="day"></td>
+            <td class="day"></td>
+            <td class="day"></td>
+            <td class="day"></td>
+            <td class="day"></td>
+            <td class="day"></td>
+        </tr>
+
+        <tr>
+            <td class="day"></td>
+            <td class="day"></td>
+            <td class="day"></td>
+            <td class="day"></td>
+            <td class="day"></td>
+            <td class="day"></td>
+            <td class="day"></td>
+        </tr>
+
+        <tr>
+            <td class="day"></td>
+            <td class="day"></td>
+            <td class="day"></td>
+            <td class="day"></td>
+            <td class="day"></td>
+            <td class="day"></td>
+            <td class="day"></td>
+        </tr>
+
+        <tr>
+            <td class="day"></td>
+            <td class="day"></td>
+            <td class="day"></td>
+            <td class="day"></td>
+            <td class="day"></td>
+            <td class="day"></td>
+            <td class="day"></td>
+        </tr>
+
+        <tr>
+            <td class="day"></td>
+            <td class="day"></td>
+            <td class="day"></td>
+            <td class="day"></td>
+            <td class="day"></td>
+            <td class="day"></td>
+            <td class="day"></td>
+        </tr>
+    </tbody>
+
+</table>
+</body>
+</html>

@@ -1,0 +1,28 @@
+
+
+<form action="/signup" method="post">
+
+    <h2 id="err-msg"><%- msg %></h2>
+    <br>
+
+    <!--registration user name-->
+    <div class="form-group">
+        <label for="inputUsername">User Name</label>
+        <input id="inputUsername" type="text" name="user_name" placeholder="User Name">
+    </div>
+
+    <!--registrarion password-->
+    <div class="form-group">
+        <label for="inputPassword">Password</label>
+        <input id="inputPassword" type="password" name="password" placeholder="Password">
+    </div>
+
+    <!--confirm password-->
+    <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input id="confirmPassword" type="password" name="confirm" placeholder="Password">
+    </div>
+
+    <!--register button-->
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>

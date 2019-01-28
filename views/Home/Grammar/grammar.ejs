@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%- title %></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../stylesheets/style.css">
+    <link rel="stylesheet" href="../../stylesheets/question.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+<!--pass the variable to js from ejs-->
+<script>
+
+    let data = {
+
+        question: '<%= question[0]['question'] %>',
+        blank: '<%= question[0]['blank'] %>',
+        1: '<%= question[0]['one'] %>',
+        2: '<%= question[0]['two'] %>',
+        3: '<%= question[0]['three'] %>',
+        4: '<%= question[0]['four'] %>',
+        disc: '<%= question[0]['disc'] %>',
+        ja: '<%= question[0]['ja'] %>',
+        answer: '<%= question[0]['answer'] %>',
+        id: '<%= id %>',
+        table: '<%= table %>',
+        max: '<%= max %>'
+    };
+
+</script>
+
+
+<!--header line-->
+<%- include('../header') %>
+<br>
+
+<!--title line-->
+<%- include('../title', {title: title}) %>
+<br>
+<p>空欄に当てはまる選択肢を選んでください。</p>
+<hr>
+
+<!--body line-->
+<%- include('questionBox') %>
+
+<!--pagination-->
+<%- include('../page', {id: id, field: field, kind: kind}) %>
+<br>
+
+
+<%- include('../back') %>
+
+<!--control dom from jsfile-->
+<script type="text/javascript" src="../../javascripts/grammar.js"></script>
+<script type="text/javascript" src="../../javascripts/question.js"></script>
+
+</body>
+</html>

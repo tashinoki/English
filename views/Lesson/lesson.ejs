@@ -1,0 +1,23 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%- title %></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../stylesheets/style.css">
+</head>
+<body>
+<%- include('../Home/header') %>
+<br>
+<h2><%- ja %></h2>
+<br>
+<div>
+<%- include('component', {lesson: result, kind: kind, field: field}) %>
+</div>
+<button id="kind_choicer" class="btn btn-primary">戻る</button>
+
+<script type="text/javascript" src="../../javascripts/lesson.js"></script>
+</body>
+</html>

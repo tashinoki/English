@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%- title %></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../stylesheets/style.css">
+
+    <script rel="javascript" src="/javascripts/listening.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+    <script>
+        const id = '<%= id %>';
+        const rank = '<%= rank %>';
+        const title = '<%- question['title'] %>';
+        let text = '<%= question['text'] %>';
+        let question = ['<%= question[1] %>', '<%= question[2] %>', '<%= question[3] %>', '<%= question[4] %>', '<%= question[5] %>', '<%= question[6] %>'];
+    </script>
+
+</head>
+<body>
+<%- include('../header') %>
+
+<div class="config">
+    <h1 id="title"> </h1>
+    <div>
+        <audio id="player" src="/Sound/beginner100.mp3" onended="End()">Your browser does not support the audio element.</audio>
+    </div>
+
+    <div id="box" style="width: 500px; height: 150px">
+        <p>ボタンを押して音声を再生させてください</p>
+        <button id="play" onclick="Play()">再生</button>
+    </div>
+</div>
+
+<!--問題を表示させる箇所-->
+<div id="wrap"></div>
+
+<!--結果を表示させる箇所-->
+<div id="result"></div>
+
+<!--音声の文字起こしを表示させる-->
+<div id="text" style="width: 450px; line-height: 20px"></div>
+
+</body>
+</html>
