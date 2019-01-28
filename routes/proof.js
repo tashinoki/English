@@ -26,13 +26,6 @@ router.get('/', (req, res, next) => {
         result.score = results;
         res.send(result);
     });
-
-    request('http://127.0.0.1:1049/checkDocument?data=' + query_string, (err, response, body) => {
-
-        if(err) throw err;
-
-        result.body = body;
-    });
 });
 
 module.exports = router;
