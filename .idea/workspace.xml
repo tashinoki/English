@@ -81,7 +81,7 @@
           <entry key="css" value="480" />
           <entry key="ejs" value="16501" />
           <entry key="gitignore" value="25" />
-          <entry key="js" value="53445" />
+          <entry key="js" value="53459" />
           <entry key="json" value="7" />
           <entry key="pug" value="270" />
           <entry key="question" value="169" />
@@ -94,7 +94,7 @@
           <entry key="HTML" value="4" />
           <entry key="JSON" value="7" />
           <entry key="Jade" value="270" />
-          <entry key="JavaScript" value="53403" />
+          <entry key="JavaScript" value="53417" />
           <entry key="PLAIN_TEXT" value="266" />
         </counts>
       </usages-collector>
@@ -149,8 +149,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/javascripts/writing.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="43" column="32" lean-forward="true" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+            <state relative-caret-position="239">
+              <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
@@ -433,12 +433,12 @@
       <workItem from="1548217778725" duration="7397000" />
       <workItem from="1548308905461" duration="760000" />
       <workItem from="1548643056994" duration="178000" />
-      <workItem from="1548653344236" duration="1986000" />
+      <workItem from="1548653344236" duration="2091000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="396905000" />
+    <option name="totallyTimeSpent" value="397010000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -803,8 +803,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/writing.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="43" column="32" lean-forward="true" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+        <state relative-caret-position="239">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
           <folding>
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
