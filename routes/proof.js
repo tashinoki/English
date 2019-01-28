@@ -7,6 +7,8 @@ const {PythonShell} = require('python-shell');
 
 router.get('/', (req, res, next) => {
 
+    console.log('get');
+
     const {text, answer} = req.query;
     const query_string = text.split(' ').join('+');
 
