@@ -9,9 +9,9 @@ const mysql = {};
 mysql.connect = connect.createConnection({
 
     host: '127.0.0.1',
-    user: 'root',
+    user: 'kinoshita',
     password: 'fMxJUM6G',
-    database: 'english'
+    database: 'kinoshita'
 });
 
 
