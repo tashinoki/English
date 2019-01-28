@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81599f28-6349-44bb-befd-7ad16a71d225" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/javascripts/writing.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/writing.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -82,7 +81,7 @@
           <entry key="css" value="480" />
           <entry key="ejs" value="16501" />
           <entry key="gitignore" value="25" />
-          <entry key="js" value="53435" />
+          <entry key="js" value="53445" />
           <entry key="json" value="7" />
           <entry key="pug" value="270" />
           <entry key="question" value="169" />
@@ -95,7 +94,7 @@
           <entry key="HTML" value="4" />
           <entry key="JSON" value="7" />
           <entry key="Jade" value="270" />
-          <entry key="JavaScript" value="53393" />
+          <entry key="JavaScript" value="53403" />
           <entry key="PLAIN_TEXT" value="266" />
         </counts>
       </usages-collector>
@@ -150,8 +149,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/javascripts/writing.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+            <state relative-caret-position="400">
+              <caret line="43" column="32" lean-forward="true" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
@@ -434,12 +433,12 @@
       <workItem from="1548217778725" duration="7397000" />
       <workItem from="1548308905461" duration="760000" />
       <workItem from="1548643056994" duration="178000" />
-      <workItem from="1548653344236" duration="1901000" />
+      <workItem from="1548653344236" duration="1986000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="396820000" />
+    <option name="totallyTimeSpent" value="396905000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -804,8 +803,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/writing.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+        <state relative-caret-position="400">
+          <caret line="43" column="32" lean-forward="true" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
           <folding>
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
