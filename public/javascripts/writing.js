@@ -30,6 +30,8 @@ $('#submit').on('click', event => {
         return;
     }
 
+    console.log('submit');
+
     // 構成を行うサーバーにAjax通信
     $.ajax({
         url: '127.0.0.1:3000/proof',
