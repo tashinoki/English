@@ -34,7 +34,7 @@ $('#submit').on('click', event => {
 
     // 構成を行うサーバーにAjax通信
     $.ajax({
-        url: '127.0.0.1:3000/proof',
+        url: 'http://127.0.0.1:3000/proof',
         data: {
             text: text,
             answer: answer
