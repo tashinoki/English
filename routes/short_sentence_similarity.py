@@ -1,9 +1,4 @@
-# Python/NLTK implementation of algorithm to detect similarity between
-# short sentences described in the paper - "Sentence Similarity based
-# on Semantic Nets and Corpus Statistics" by Li, et al.
-# Results achieved are NOT identical to that reported in the paper, but
-# this is very likely due to the differences in the way the algorithm was
-# described in the paper and how I implemented it.
+
 from __future__ import division
 import nltk
 from nltk.corpus import wordnet as wn
@@ -12,8 +7,6 @@ import math
 import numpy as np
 import sys
 
-# Parameters to the algorithm. Currently set to values that was reported
-# in the paper to produce "best" results.
 ALPHA = 0.2
 BETA = 0.45
 ETA = 0.4

@@ -1,0 +1,102 @@
+
+
+/*body 要素の奥行きを 0 にする*/
+body{
+    z-index: 0;
+}
+
+/*カレンダーの文字は中央揃えにする*/
+td,th{
+    text-align: center;
+}
+
+/*カレンダーのセルのスタイル*/
+.day{
+    width: 14%;
+    height: 80px;
+    position: relative;
+}
+
+/*アイコンのスタイル*/
+.fas, .far{
+    font-size: 30px;
+    margin-top: 10px;
+
+    /*スタイルの変化には0.5sかける*/
+    transition: all 500ms 0ms ease;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+/*月の移動ボタンにカーソルが乗った場合*/
+.fas:hover{
+    color: #fff;
+    background-color: #000;
+}
+
+/*カレンダーの日付のスタイル*/
+.value{
+    font-size: 15px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/*ポップアップの内容*/
+.popup-content{
+    visibility: hidden;
+    border: solid 1px #666666;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+/*ポップアップの内容を囲むボックス*/
+.popup-overlay{
+    visibility: hidden;
+    position: absolute;
+    width: 50%;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+
+/*カレンダーとポップアップ要素を包むボックス*/
+#wrapper{
+    position: relative;
+    z-index: 1;
+}
+
+
+/*フェードアウト用*/
+#fadeout{
+
+    /*ウィンドウの左上を基準とする*/
+    position:absolute;
+    top: 0;
+    left: 0;
+
+    /*縦と横の比率*/
+    width:100%;
+    height:100%;
+
+    background-color:#000000;
+    opacity:0.5;
+    visibility: hidden;
+    z-index:0;
+}
+
+
+/*ボタンが押されるとクラスが追加される*/
+/*初期状態では見えなかった要素が見えるようになる*/
+.popup-content.active{
+    visibility: visible;
+}
+
+.popup-overlay.active{
+    visibility: visible;
+}

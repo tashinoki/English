@@ -3,21 +3,24 @@ const express = require('express');
 const router = express.Router();
 const mysql = require('./ServerJS/mysql.js').connect;
 
-// hello this is home page
+// home ページの表示
 router.get('/', (req, res) => {
 
     // ログイン時の時間を記録しておく
     req.session.user.past = new Date().getTime();
 
+    // セッションの中から必要な情報を抜き取る
     const {user_name, sum_time, last_time} = req.session.user;
+
+    // クライアントに送るデータをオブジェクトにする
     const data = {
         title: 'Home',
         user_name: user_name,
         sum_time: sum_time,
         last_time: last_time
     };
-    console.log(data.sum_time);
 
+    // クライアントへレスポンスを返す
     res.render('Home/main', data);
 });
 

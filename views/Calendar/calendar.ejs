@@ -7,100 +7,116 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="./stylesheets/style.css">
-    <script rel="javascript" type="text/javascript" src="/javascripts/calendar.js"></script>
-    <style>
-        td,th{
-            text-align: center;
-        }
-        .day{
-            width: 14%;
-            height: 80px;
-        }
-    </style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./stylesheets/calender.css">
+
+    <script rel="script" type="text/javascript" src="./javascripts/jquery.js"></script>
+    <script rel="script" type="text/javascript" src="/javascripts/calendar.js"></script>
 </head>
 <body>
+
+<!--ヘッダーバー部分-->
+<div>
 <%- include('../Home/header') %>
-<table border="1" style="width: 100%">
+</div>
 
-    <thead>
-        <tr>
-            <th colspan="1"><button id="prev">前月</button></th>
-            <th colspan="5"><span id="year"></span>年<span id="month"></span>月</th>
-            <th colspan="1"><button id="next">翌月</button></th>
-        </tr>
-        <tr>
-            <td>日</td>
-            <td>月</td>
-            <td>火</td>
-            <td>水</td>
-            <td>木</td>
-            <td>金</td>
-            <td>土</td>
-        </tr>
-    </thead>
+<!--コンテンツのラッパー-->
+<div id="wrapper">
 
-    <tbody id="body">
-        <tr>
-            <td class="day"></td>
-            <td class="day"></td>
-            <td class="day"></td>
-            <td class="day"></td>
-            <td class="day"></td>
-            <td class="day"></td>
-            <td class="day"></td>
-        </tr>
+    <!--カレンダーの表示-->
+    <table border="1" style="width: 100%">
+        <thead>
+            <tr>
+                <th colspan="1"></th>
+                <th colspan="5"><span id="year"></span>年<span id="month"></span>月</th>
+                <th colspan="1"></th>
+            </tr>
+            <tr>
+                <td>日</td>
+                <td>月</td>
+                <td>火</td>
+                <td>水</td>
+                <td>木</td>
+                <td>金</td>
+                <td>土</td>
+            </tr>
+        </thead>
 
-        <tr>
-            <td class="day"></td>
-            <td class="day"></td>
-            <td class="day"></td>
-            <td class="day"></td>
-            <td class="day"></td>
-            <td class="day"></td>
-            <td class="day"></td>
-        </tr>
+        <tbody id="body">
+            <tr>
+                <td class="day"></td>
+                <td class="day"></td>
+                <td class="day"></td>
+                <td class="day"></td>
+                <td class="day"></td>
+                <td class="day"></td>
+                <td class="day"></td>
+            </tr>
 
-        <tr>
-            <td class="day"></td>
-            <td class="day"></td>
-            <td class="day"></td>
-            <td class="day"></td>
-            <td class="day"></td>
-            <td class="day"></td>
-            <td class="day"></td>
-        </tr>
+            <tr>
+                <td class="day"></td>
+                <td class="day"></td>
+                <td class="day"></td>
+                <td class="day"></td>
+                <td class="day"></td>
+                <td class="day"></td>
+                <td class="day"></td>
+            </tr>
 
-        <tr>
-            <td class="day"></td>
-            <td class="day"></td>
-            <td class="day"></td>
-            <td class="day"></td>
-            <td class="day"></td>
-            <td class="day"></td>
-            <td class="day"></td>
-        </tr>
+            <tr>
+                <td class="day"></td>
+                <td class="day"></td>
+                <td class="day"></td>
+                <td class="day"></td>
+                <td class="day"></td>
+                <td class="day"></td>
+                <td class="day"></td>
+            </tr>
 
-        <tr>
-            <td class="day"></td>
-            <td class="day"></td>
-            <td class="day"></td>
-            <td class="day"></td>
-            <td class="day"></td>
-            <td class="day"></td>
-            <td class="day"></td>
-        </tr>
+            <tr>
+                <td class="day"></td>
+                <td class="day"></td>
+                <td class="day"></td>
+                <td class="day"></td>
+                <td class="day"></td>
+                <td class="day"></td>
+                <td class="day"></td>
+            </tr>
 
-        <tr>
-            <td class="day"></td>
-            <td class="day"></td>
-            <td class="day"></td>
-            <td class="day"></td>
-            <td class="day"></td>
-            <td class="day"></td>
-            <td class="day"></td>
-        </tr>
-    </tbody>
+            <tr>
+                <td class="day"></td>
+                <td class="day"></td>
+                <td class="day"></td>
+                <td class="day"></td>
+                <td class="day"></td>
+                <td class="day"></td>
+                <td class="day"></td>
+            </tr>
 
-</table>
+            <tr>
+                <td class="day"></td>
+                <td class="day"></td>
+                <td class="day"></td>
+                <td class="day"></td>
+                <td class="day"></td>
+                <td class="day"></td>
+                <td class="day"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--ポップアップで表示させる部分-->
+    <%- include('./popup') %>
+</div>
+
+<!--アイコンを表示させる部分-->
+<div class="icon_wraper">
+    <p id="prev" class="fas fa-chevron-circle-left"></p>
+    <p id="next" class="fas fa-chevron-circle-right"></p>
+</div>
+
+<!--フェードアウト用-->
+<div id="fadeout"></div>
+
 </body>
 </html>

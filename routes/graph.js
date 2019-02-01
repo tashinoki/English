@@ -27,6 +27,7 @@ routes.get('/', (req, res, next) => {
     const type_change = {
         week: () => {
             const sql = 'select `date`, `time` from ?? order by date desc';
+            console.log(sql);
             mysql.connect.query(sql, [user_name], (err, results) => {
                     if(err) throw err;
                     data.graph_data = time_data.calWeek(results, index);

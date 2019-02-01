@@ -30,21 +30,45 @@ $('#submit').on('click', event => {
         return;
     }
 
-    console.log('submit');
 
     // 構成を行うサーバーにAjax通信
     $.ajax({
-        url: 'http://150.43.212.193:3000/proof',
+        url: '/proof',
         data: {
             text: text,
             answer: answer
         },
 
         success: (result) => {  // 結果の受け取り
-            console.log(result);
+            proofResult(result);
+            showAnswer();
         }
     });
 
     // 一度クリックするとボタンを無効にする
     event.target.disabled = true;
 });
+
+
+// 類似度計算をもとに正誤の判定を下す関数
+function proofResult(score){
+
+    // 正誤の結果を表紙させるオブジェクト
+    const proof_result = document.getElementById('result');
+
+    // スコアが 0.8 以上の場合は正解
+    if(score >= 0.8) proof_result.innerHTML = '<p style="color: red">正解</p>';
+
+    // それ以外は不正解とする
+    else proof_result.innerHTML = '<p style="color: blue">不正解</p>';
+}
+
+
+// 模範解答を表示さセル
+function showAnswer(){
+
+    // 模範解答を表示させるオブジェクト
+    const answer = document.getElementById('answer');
+
+    answer.innerHTML = `<p>模範解答</p><p>${data.question}</p>`;
+}
